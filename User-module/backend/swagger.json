@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "User Management API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/users": {
+      "get": {
+        "summary": "Get all users",
+        "responses": { "200": { "description": "OK" } }
+      },
+      "post": {
+        "summary": "Create a user",
+        "responses": { "201": { "description": "Created" } }
+      }
+    },
+    "/api/v1/users/{id}": {
+      "get": {
+        "summary": "Get user by ID",
+        "responses": { "200": { "description": "OK" } }
+      },
+      "put": {
+        "summary": "Update user",
+        "responses": { "200": { "description": "OK" } }
+      },
+      "delete": {
+        "summary": "Delete user",
+        "responses": { "200": { "description": "OK" } }
+      }
+    }
+  }
+}

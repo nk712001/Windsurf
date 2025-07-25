@@ -1,0 +1,138 @@
+.site-layout-content {
+  background: #fff;
+  padding: 18px 16px;
+  min-height: 280px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.09), 0 1.5px 6px 0 rgba(0,0,0,0.06);
+  margin: 32px auto;
+  max-width: 350px;
+}
+
+.content-inner {
+  padding: 24px 32px;
+}
+
+.forgot-password-content {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+
+.ant-layout-header {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  padding: 0 40px;
+  min-height: 64px !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 12px 0 rgba(30,60,114,0.10);
+  border-radius: 0 0 18px 18px;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 8px 32px 8px 0;
+}
+
+.ant-layout-header .ant-menu {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-left: 32px;
+}
+
+.ant-layout-header .ant-menu-item {
+  color: #fff !important;
+  background: transparent !important;
+  border-radius: 8px;
+  margin: 0 4px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.ant-layout-header .ant-menu-item-selected,
+.ant-layout-header .ant-menu-item-active {
+  background: rgba(255,255,255,0.18) !important;
+  color: #fff !important;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-layout-footer {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  color: #fff;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -2px 12px 0 rgba(30,60,114,0.07);
+  font-size: 1rem;
+  padding: 20px 0;
+  margin: 32px auto 0 auto;
+  width: 98.8vw;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 32px auto 0 auto;
+  border-radius: 18px 18px 0 0;
+}
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 16px 32px;
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.09), 0 1.5px 6px 0 rgba(0,0,0,0.06);
+  color: #4567b7;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2.1rem;
+  letter-spacing: 0.02em;
+  color: #213547;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+}
+
+button, .ant-btn-primary {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px 0 rgba(30,60,114,0.08);
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.2s;
+}
+
+button:hover, .ant-btn-primary:hover {
+  background: linear-gradient(90deg, #3a6edc 0%, #2952a3 100%) !important;
+  color: #fff !important;
+  border-color: #2a5298;
+}
+
+button:focus,
+button:focus-visible,
+.ant-btn-primary:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+  background: linear-gradient(90deg, #3a6edc 0%, #2952a3 100%) !important;
+  color: #fff !important;
+}
