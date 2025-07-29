@@ -1,3 +1,4 @@
+import "./otel-init";
 import "reflect-metadata";
 import express from "express";
 import cors from "cors";
@@ -19,6 +20,22 @@ import { requireRole } from "./middleware/rbacMiddleware";
 dotenv.config();
 
 const app = express();
+
+// Metrics
+import { metricsHandler, httpRequestCounter } from './metrics';
+app.get('/metrics', metricsHandler);
+
+// Increment Prometheus counter for every request
+app.use((req, res, next) => {
+  res.on('finish', () => {
+    httpRequestCounter.inc({
+      method: req.method,
+      route: req.route ? req.route.path : req.path,
+      status: res.statusCode,
+    });
+  });
+  next();
+});
 
 app.use(cors());
 app.use(morgan("dev"));

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap');
+
+.storybook-header.enhanced-header {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 8px rgba(118, 75, 162, 0.08);
+  border: none;
+  border-radius: 0;
+  padding: 24px 32px;
+  font-family: 'Poppins', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-title {
+  font-family: 'Poppins', 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 6px 0 6px 18px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  /* text-transform: uppercase; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.storybook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.storybook-header svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.storybook-header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 6px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.storybook-header button + button {
+  margin-left: 10px;
+}
+
+.user-highlight {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.05em;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.logout-contrast {
+  background: #ff7043 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 6px !important;
+  font-weight: bold !important;
+  padding: 0 18px !important;
+  box-shadow: 0 2px 8px rgba(255,112,67,0.12);
+  transition: background 0.2s;
+  line-height: 1.7;
+}
+
+.logout-contrast:hover, .logout-contrast:focus {
+  background: #ff3d00 !important;
+  color: #fff !important;
+}
+
+.storybook-header .welcome {
+  margin-right: 10px;
+  color: #333;
+  font-size: 16px;
+}
